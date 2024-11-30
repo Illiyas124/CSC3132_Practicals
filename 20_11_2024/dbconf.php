@@ -1,8 +1,13 @@
 <?php
-define('SERVERNAME','127.0.0.1:3306');
-define('USERNAME','root');
-define('PASSWORD','mariadb');
-define('DNAME','students');
+//define('SERVERNAME','127.0.0.1:3306');
+//define('USERNAME','root');
+//define('PASSWORD','mariadb');
+//define('DNAME','students');
+$dbHost = getenv('DB_HOST');
+$dbName = getenv('DB_NAME');
+$dbUser = getenv('DB_USER');
+$dbPass = getenv('DB_PASS');
+
 
 //connect with database
 try{
