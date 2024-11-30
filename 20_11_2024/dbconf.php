@@ -14,7 +14,7 @@ $connect=mysqli_connect(SERVERNAME,USERNAME,PASSWORD,DNAME);
         echo "connectection successfully";
     }
 }
-catch (Execption $e){
+catch (Exception $e){
     die($e->getMessage());
 }
 ?>
