@@ -1,20 +1,20 @@
-<?php
-define('SERVERNAME','127.0.0.1:3306');
-define('USERNAME','root');
-define('PASSWORD','mariadb');
-define('DNAME','students');
 
-try{
 
-$connect=mysqli_connect(SERVERNAME,USERNAME,PASSWORD,DNAME);
-    if(!$connect){
-        die("connection failed".mysqli_connect_error());
-    }
-    else{
-        echo "connectection successfully";
-    }
+// dbconf.php
+
+$host = getenv('DB_HOST') ?: 'db';  // Default to 'db' if DB_HOST is not set
+$dbname = getenv('DB_NAME') ?: 'students';
+$user = getenv('DB_USER') ?: 'root';
+$pass = getenv('DB_PASS') ?: 'mariadb';
+
+// Create a connection using mysqli
+$connect = mysqli_connect($host, $user, $pass, $dbname);
+
+// Check for connection errors
+if (!$connect) {
+    die("Database connection failed: " . mysqli_connect_error());
 }
-catch (Exception $e){
-    die($e->getMessage());
-}
+
+// Connection was successful
+echo "Database connection successful.";
 ?>
