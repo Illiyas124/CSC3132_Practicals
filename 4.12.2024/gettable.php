@@ -32,7 +32,7 @@ PrintTable ("student",$connect);
 <?php
 
 if (isset($_GET['name']) && $_GET['name'] != '') {
-	Searchemployee($_GET['name'],$connect);
+	Searchstudents($_GET['name'],$connect);
 }
 
 
