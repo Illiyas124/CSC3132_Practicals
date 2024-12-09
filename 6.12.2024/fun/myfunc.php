@@ -58,7 +58,7 @@ require_once 'conf/dbconf.php';
          function studentdetails($regno,$connect){
             try{
             
-                $sql = "SELECT * FROM  student where  regno = $regno ";
+                $sql = "SELECT * FROM  student WHERE  $regno = 'regno' ";
             
             
                 $result = mysqli_query($connect,$sql);

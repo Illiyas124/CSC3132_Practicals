@@ -13,6 +13,7 @@ require_once 'fun/myfunc.php';
 
 //PrintTable ("student",$connect);
 student($connect);
+//studentdetails($regno,$connect);
 
 ?>
 

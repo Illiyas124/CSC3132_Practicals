@@ -18,6 +18,7 @@ require_once 'fun/myfunc.php';
  $regno = $_GET['regno'];
 
  studentdetails($regno,$connect);
+ 
 
 
 ?>
