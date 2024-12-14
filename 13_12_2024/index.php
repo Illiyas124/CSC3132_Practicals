@@ -83,8 +83,8 @@
 </head>
 <body>
 <?php
-require_once 'conf.php';
-require_once 'func.php';
+require_once 'conf/conf.php';
+require_once 'func/func.php';
 ?>
 <div class="main">
     <div class="head">
