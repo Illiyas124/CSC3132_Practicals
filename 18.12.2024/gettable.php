@@ -8,7 +8,7 @@
 	<?php
 
 
-require_once 'dbconf.php';
+require_once 'conf/dbconf.php';
 require_once 'myfunc.php';
 
 PrintTable ("books",$connect);
